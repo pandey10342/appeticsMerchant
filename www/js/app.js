@@ -31,13 +31,16 @@ var driver_marker;
 var map_bounds;
 var track_order_map_interval;
 var marker_dropoff;
-
+var admobid = {
+banner: 'ca-app-pub-6871330764548204/6787711262',
+autoShow:true
+};
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {    
 	    		
 	try {
-		
+		AdMob.createBanner(admobid);
 	
 		navigator.splashscreen.hide();
 		
